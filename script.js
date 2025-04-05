@@ -59,7 +59,7 @@ function createChatBox(html,classes){
 
 function handlechatResponse(userMessage){
     user.message=userMessage
-    let html=`<img src="assets/user-profile.png" alt="" id="userImage" width="8%">
+    let html=`<img src="user-profile.png" alt="" id="userImage" width="8%">
 <div class="user-chat-area">
 ${user.message}
 ${user.file.data?`<img src="data:${user.file.mime_type};base64,${user.file.data}" class="chooseimg" />` : ""}
@@ -71,7 +71,7 @@ chatContainer.appendChild(userChatBox)
 chatContainer.scrollTo({top:chatContainer.scrollHeight,behavior:"smooth"})
 
 setTimeout(()=>{
-let html=`<img src="assets/robot-chatbot-icon-sign-free-vector.jpg" alt="" id="aiImage" width="8%" style="border-radius: 100%;">
+let html=`<img src="robot-chatbot-icon-sign-free-vector.jpg" alt="" id="aiImage" width="8%" style="border-radius: 100%;">
     <div class="ai-chat-area">
     <img src="loading.webp" alt="" class="load" width="50px">
     </div>`
